@@ -1,4 +1,10 @@
-import "dotenv/config";
+import dotenv from "dotenv";
+import { fileURLToPath } from "url";
+
+// 无论从哪个子目录运行，都显式加载项目根目录的 .env
+dotenv.config({
+  path: fileURLToPath(new URL("../../.env", import.meta.url)),
+});
 import { ChatOpenAI } from "@langchain/openai";
 import {
   HumanMessage,
