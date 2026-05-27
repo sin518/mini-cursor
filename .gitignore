@@ -54,3 +54,22 @@ pids
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+
+# 数据库卷文件
+milvus/volumes/
+milvus-test/
+
+# 大文件
+*.dmg
+*.sst
+*.wal
+*.tmp
+
+# 其他常见忽略文件
+node_modules/
+dist/
+build/
+.env
+.DS_Store
+EOF
